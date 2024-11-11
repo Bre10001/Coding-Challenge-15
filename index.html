@@ -4,13 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Financial Portfolio Management System</title>
+    <style>
+        body {
+            background-color: lavender;
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #4B0082;
+        }
+        h2 {
+            color: #4B0082;
+            margin-top: 1.5em;
+        }
+        .percentages, .transactions {
+            list-style-type: none;
+            padding: 0;
+        }
+        .percentages li, .transactions li {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
 </head>
 <body>
     <h1>Financial Portfolio Management System</h1>
 
-    <!-- Portfolio details and transaction log sections here -->
+    <div class="container">
+        <h2>Portfolio Value and Allocation</h2>
+        <div id="portfolioDetails"></div>
+        <ul id="portfolioPercentages" class="percentages"></ul>
+        
+        <h2>Transaction Details</h2>
+        <ul id="transactionLog" class="transactions"></ul>
+    </div>
 
-    <!-- Main script entry point with module type -->
     <script type="module" src="main.js"></script>
 </body>
 </html>
